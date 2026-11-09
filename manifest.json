@@ -1,0 +1,23 @@
+{
+  "id": "library-explorer",
+  "name": "Explorer",
+  "version": "1.0.0",
+  "author": "Vibo",
+  "description": "Browse your library as a tree — by artist, by genre or by year — with the tracks of whatever you pick beside it.",
+  "minAppVersion": "1.0.118",
+  "stability": "experimental",
+  "homepage": "https://github.com/outcast1000/viboplr-library-explorer",
+  "updateUrl": "https://github.com/outcast1000/viboplr-library-explorer/releases/latest/download/update.json",
+  "runtime": "worker",
+  "permissions": ["library:read", "playback:control"],
+  "permissionReasons": {
+    "library:read": "List your artists, albums, tags and tracks to build the tree",
+    "playback:control": "Play or enqueue the tracks of what you picked"
+  },
+  "viewHeader": { "subtitle": "Browse by artist, genre or year" },
+  "contributes": {
+    "sidebarItems": [
+      { "id": "explorer", "label": "Explorer", "icon": "folder" }
+    ]
+  }
+}
